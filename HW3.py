@@ -22,7 +22,7 @@ def get_numbers_ticket(min, max, quantity):
     nlist = []
     if min > 0:
         if 0 < max < 1000:
-            if (max-min)>quantity:
+            if ((max+1)-min)>=quantity:
                 lst = list(range(min, max + 1))
                 nlist = (random.sample(lst, quantity))
                 nlist.sort()
